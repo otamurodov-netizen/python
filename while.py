@@ -32,10 +32,26 @@
 
 
 # faktorialni topish
-son = int(input("son kiriting\n>>"))
-i = 1
-faktorial = 1
-while i <= son:
-    faktorial *= i
-    i += 1
-print("kiritilgan sonning faktoriali:", faktorial)
+# son = int(input("son kiriting\n>>"))
+# i = 1
+# faktorial = 1
+# while i <= son:
+#     faktorial *= i
+#     i += 1
+# print("kiritilgan sonning faktoriali:", faktorial)
+
+
+
+
+def bubble(nums):
+    nums = [8,5,2,4,3]
+    n = len(nums)
+    for f in range(1,4):
+        for i in range(n-1):
+            if nums[i] > nums[i+1]:
+                nums[i], nums[i+1] = nums[i+1], nums[i]
+    print(nums)
+
+
+print(bubble(nums=[8,5,2,4,3]))
+
